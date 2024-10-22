@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static 'vendors/perfect-scrollbar/perfect-scrollbar.css'%}">
     <link rel="stylesheet" href="{% static 'vendors/bootstrap-icons/bootstrap-icons.css'%}">
     <link rel="stylesheet" href="{% static 'css/app.css'%}">
-    <link rel="shortcut icon" href="{% static 'images/favicon.svg'%}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 </head>
 
 <body>
@@ -331,6 +331,10 @@
                                 <li class="submenu-item ">
                                     <a href="auth-forgot-password.html">Forgot Password</a>
                                 </li>
+                                <li class="submenu-item ">
+                                    <a><button class="btn" id="logout-button">Logout</button></a>
+                                </li>
+
                             </ul>
                         </li>
 
@@ -669,11 +673,14 @@
     </div>
     <script src="{% static 'vendors/perfect-scrollbar/perfect-scrollbar.min.js'%}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{% static 'vendors/apexcharts/apexcharts.js'%}"></script>
     <script src="{% static 'js/pages/dashboard.js'%}"></script>
 
     <script src="{% static 'js/main.js'%}"></script>
+
+    <script src="{% static 'js/alerts/alert_logout.js'%}"></script>
+
 </body>
 
 </html>
